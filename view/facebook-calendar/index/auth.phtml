@@ -1,0 +1,18 @@
+<?php $this->headTitle()->prepend($this->translate('My Facebook Profile')); ?>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="form-group">
+                <h2><i class="fa fa-facebook"></i> Facebook Sync <small><?php echo $this->translate('Confirm the permissions of Facebook pages')?></small></h2>
+                <hr/>
+                <p><?php echo $this->translate('Here you can connect this website with your facebook profile.')?></p>
+                <blockquote><?php echo $this->translate('Click on the Facebook Login button. You will redirect at the facebook website where you have to accept the permissions on the facebook page.')?></blockquote>
+                <p>
+                    <a class="btn btn-primary" href="<?php echo $this->facebooklogin() ?>"><i class="fa fa-facebook"></i> <?php echo $this->translate('Facebook Login')?></a>
+                </p>
+                <br/>
+            </div>
+        </div>
+    </div>
+</div>
+
